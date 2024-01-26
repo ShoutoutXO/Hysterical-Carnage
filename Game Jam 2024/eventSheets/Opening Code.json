@@ -1,5 +1,140 @@
 {
 	"name": "Opening Code",
-	"events": [],
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "[h1]Start-Offs[/h1]"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 995746872193942
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "Fault",
+					"sid": 358626610246753,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1000"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Threat",
+					"sid": 718176032021183
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Threat",
+					"sid": 103801490873612,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BossIntro",
+					"sid": 742845760987679,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 988973166998005
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "BlameGuy",
+					"sid": 548611115852554,
+					"parameters": {
+						"animation": "\"Begin\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "BlameGuy",
+					"sid": 490798063328836
+				},
+				{
+					"id": "set-wait-time",
+					"objectClass": "Fault",
+					"sid": 104388240793824,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "2"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "Fault",
+					"sid": 491607679628447,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BossIntro",
+					"sid": 158110520886852,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Threat",
+					"sid": 974246692828102,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Threat",
+					"sid": 870343751468227,
+					"parameters": {
+						"animation": "\"Make Me\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 357014630924065
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Threat",
+					"sid": 179332286156013,
+					"parameters": {
+						"animation": "\"Make Me\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 803766928737723,
+					"parameters": {
+						"layout": "Main Level"
+					}
+				}
+			],
+			"sid": 274015133409018
+		}
+	],
 	"sid": 314326888003548
 }

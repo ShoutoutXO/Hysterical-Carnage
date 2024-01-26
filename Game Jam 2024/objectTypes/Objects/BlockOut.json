@@ -1,0 +1,27 @@
+{
+	"name": "BlockOut",
+	"plugin-id": "TiledBg",
+	"sid": 682608199131988,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 443397582572235
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2004243,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

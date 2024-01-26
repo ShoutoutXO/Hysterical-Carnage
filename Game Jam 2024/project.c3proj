@@ -64,15 +64,22 @@
 		},
 		{
 			"type": "behavior",
-			"id": "MoveTo",
-			"name": "Move To",
+			"id": "Fade",
+			"name": "Fade",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
-			"id": "Sin",
-			"name": "Sine",
+			"id": "Flash",
+			"name": "Flash",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "MoveTo",
+			"name": "Move To",
 			"author": "Scirra",
 			"bundled": false
 		},
@@ -93,29 +100,60 @@
 	],
 	"uniqueId": "k2p1ex54kgu",
 	"objectTypes": {
-		"items": [
-			"Sprite",
-			"TiledBackground",
-			"Score",
-			"Text",
-			"stage",
-			"Sprite2",
-			"Title",
-			"Sprite3",
-			"Mouse",
-			"Play",
-			"Quit",
-			"Leave",
-			"ProgressBar",
-			"container",
-			"Text2",
-			"Continue",
-			"ToMainMenu",
-			"Main",
-			"Text3",
-			"Keyboard"
-		],
-		"subfolders": []
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Keyboard",
+					"Mouse"
+				],
+				"subfolders": [],
+				"name": "Controls"
+			},
+			{
+				"items": [
+					"BlameGuy",
+					"BossIntro",
+					"Bossman",
+					"die",
+					"Player"
+				],
+				"subfolders": [],
+				"name": "Characters"
+			},
+			{
+				"items": [
+					"BossTalk",
+					"Fault",
+					"GameOver",
+					"Main",
+					"Quit",
+					"Score",
+					"Text",
+					"Text3",
+					"Title",
+					"Threat",
+					"ProgressBar",
+					"Over",
+					"Continue",
+					"Leave",
+					"Play",
+					"ToMainMenu",
+					"container"
+				],
+				"subfolders": [],
+				"name": "UI"
+			},
+			{
+				"items": [
+					"BlockOut",
+					"Sprite3",
+					"stage"
+				],
+				"subfolders": [],
+				"name": "Objects"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [

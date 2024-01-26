@@ -2,6 +2,10 @@
 	"name": "GameOver Code",
 	"events": [
 		{
+			"eventType": "comment",
+			"text": "[h2]Main Stuff[/h2]"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -52,6 +56,152 @@
 				}
 			],
 			"sid": 251916340182849
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 719599938959295
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "GameOver",
+					"sid": 349630914302676,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Main",
+					"sid": 692192182700677,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Continue",
+					"sid": 837459398171907,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ToMainMenu",
+					"sid": 703185335823646,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "die",
+					"sid": 460030527008905,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "die",
+					"sid": 187422492903608
+				}
+			],
+			"sid": 928575864382317
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Over",
+					"sid": 573456031503314,
+					"parameters": {
+						"animation": "\"Fired\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-visible",
+					"objectClass": "die",
+					"sid": 401896050919762,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "die",
+					"sid": 794814017406149,
+					"parameters": {
+						"animation": "\"XD\"",
+						"from": "beginning"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Over",
+					"sid": 880765235695481
+				}
+			],
+			"sid": 723837558158339
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-any-animation-finished",
+					"objectClass": "die",
+					"sid": 506900415608990
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "die",
+					"sid": 687851109211644
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "GameOver",
+					"sid": 698966322183653,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Main",
+					"sid": 151641793846808,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Continue",
+					"sid": 325055344715653,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "ToMainMenu",
+					"sid": 902246186036840,
+					"parameters": {
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 402046526048385
 		}
 	],
 	"sid": 233503835794588

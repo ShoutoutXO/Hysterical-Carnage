@@ -2,6 +2,10 @@
 	"name": "Menu Code",
 	"events": [
 		{
+			"eventType": "comment",
+			"text": "[h2]The Main[/h2]"
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -19,9 +23,9 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 294033077573363,
+					"sid": 278471277132701,
 					"parameters": {
-						"layout": "Main Level"
+						"layout": "Opening Scene"
 					}
 				}
 			],

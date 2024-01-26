@@ -1,0 +1,20 @@
+{
+	"name": "Fault",
+	"plugin-id": "Text",
+	"sid": 565444449351402,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 263400892608484
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 336279774879152
+		}
+	],
+	"effectTypes": []
+}

@@ -7,7 +7,7 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Sprite",
+					"type": "Player",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -65,7 +65,7 @@
 					}
 				},
 				{
-					"type": "TiledBackground",
+					"type": "BlockOut",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -111,7 +111,7 @@
 					}
 				},
 				{
-					"type": "TiledBackground",
+					"type": "BlockOut",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -157,7 +157,7 @@
 					}
 				},
 				{
-					"type": "TiledBackground",
+					"type": "BlockOut",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -203,7 +203,7 @@
 					}
 				},
 				{
-					"type": "TiledBackground",
+					"type": "BlockOut",
 					"properties": {
 						"initially-visible": true,
 						"origin": "top-left",
@@ -405,7 +405,7 @@
 					}
 				},
 				{
-					"type": "Sprite2",
+					"type": "Bossman",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -415,22 +415,7 @@
 					},
 					"uid": 10,
 					"instanceVariables": {},
-					"behaviors": {
-						"Sine": {
-							"properties": {
-								"movement": "horizontal",
-								"wave": "sine",
-								"period": 4,
-								"period-random": 0,
-								"period-offset": 0,
-								"period-offset-random": 0,
-								"magnitude": 50,
-								"magnitude-random": 0,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
 						"x": 506,
 						"y": 291,
@@ -459,8 +444,20 @@
 						"class": ""
 					},
 					"uid": 17,
-					"instanceVariables": {},
-					"behaviors": {},
+					"instanceVariables": {
+						"Meter": 100
+					},
+					"behaviors": {
+						"Anchor": {
+							"properties": {
+								"left-edge": "window-left",
+								"top-edge": "window-top",
+								"right-edge": "none",
+								"bottom-edge": "none",
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 725,
 						"y": 80,
@@ -495,6 +492,64 @@
 						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BossTalk",
+					"properties": {
+						"text": "Make me laugh or else",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 16,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 14,
+					"instanceVariables": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 3,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 394.1827752802691,
+						"y": 118.64947649107205,
+						"width": 276.22430161874195,
+						"height": 39.01577761081896,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -544,5 +599,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Menu Code"
+	"eventSheet": "Main Code"
 }

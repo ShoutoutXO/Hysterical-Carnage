@@ -7,12 +7,12 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Text3",
+					"type": "Fault",
 					"properties": {
-						"text": "Fill it in",
+						"text": "This is your fault for this",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 27,
+						"size": 19,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -30,16 +30,117 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
+					"uid": 15,
+					"instanceVariables": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 5,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 234.35375280935494,
+						"y": 258.7141616001118,
+						"width": 343.0602728328294,
+						"height": 69.01643804531722,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BlameGuy",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Begin",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 24,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 397.7340586595975,
+						"y": 473.3045769750123,
+						"width": 118.39725586643657,
+						"height": 228.27368574946075,
+						"originX": 0.5061728395061729,
+						"originY": 0.389937106918239,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "BossIntro",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
 					"uid": 11,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 331.0808942470004,
-						"y": 334.3083593221972,
-						"width": 180.49178097734136,
-						"height": 78.77054755664653,
-						"originX": 0,
-						"originY": 0,
+						"x": 391.2316085458955,
+						"y": 486.3105129035159,
+						"width": 237,
+						"height": 251,
+						"originX": 0.5274261603375527,
+						"originY": 0.49800796812749004,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Threat",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Make Me",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 34,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 383.9169625212837,
+						"y": 276.59703601085914,
+						"width": 217,
+						"height": 74,
+						"originX": 0.4608294930875576,
+						"originY": 0.6621621621621622,
 						"color": [
 							1,
 							1,

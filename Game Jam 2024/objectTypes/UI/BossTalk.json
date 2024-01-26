@@ -1,0 +1,20 @@
+{
+	"name": "BossTalk",
+	"plugin-id": "Text",
+	"sid": 152927972525768,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 845335108017433
+		},
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 787169160729424
+		}
+	],
+	"effectTypes": []
+}
