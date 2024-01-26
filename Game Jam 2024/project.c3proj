@@ -8,6 +8,13 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
+			"id": "Audio",
+			"name": "Audio",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
 			"id": "Keyboard",
 			"name": "Keyboard",
 			"author": "Scirra",
@@ -85,6 +92,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Sin",
+			"name": "Sine",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "scrollto",
 			"name": "Scroll To",
 			"author": "Scirra",
@@ -105,7 +119,8 @@
 			{
 				"items": [
 					"Keyboard",
-					"Mouse"
+					"Mouse",
+					"Audio"
 				],
 				"subfolders": [],
 				"name": "Controls"
@@ -196,7 +211,32 @@
 			"subfolders": []
 		},
 		"music": {
-			"items": [],
+			"items": [
+				{
+					"name": "Curb Your Enthusiasm Theme.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 500680956941868,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Soundtrack #7 Pat und Patachon ｜ Eric Frantzen Chor & Orchester.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 350663653217842,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "＂Cold＂ - Jorge Méndez (Sad Piano & Violin Instrumental).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 999571999838741,
+					"file-info": {
+						"purpose": "none"
+					}
+				}
+			],
 			"subfolders": []
 		},
 		"video": {

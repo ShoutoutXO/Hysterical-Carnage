@@ -25,6 +25,18 @@
 						"off-time": "0.1",
 						"duration": "1000"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 390616152011712,
+					"parameters": {
+						"audio-file": "Soundtrack #7 Pat und Patachon ｜ Eric Frantzen Chor & Orchester",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 752669238129633

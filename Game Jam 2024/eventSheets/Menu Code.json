@@ -27,6 +27,14 @@
 					"parameters": {
 						"layout": "Opening Scene"
 					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 933743211473765,
+					"parameters": {
+						"tag": "\"\""
+					}
 				}
 			],
 			"sid": 699134717946565
@@ -47,6 +55,31 @@
 			],
 			"actions": [],
 			"sid": 610791838115928
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 541387936857307
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 335410285151027,
+					"parameters": {
+						"audio-file": "Curb Your Enthusiasm Theme",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 897247941793283
 		}
 	],
 	"sid": 738920971471688
