@@ -1,0 +1,84 @@
+{
+	"name": "Main Code",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 467852618593651,
+					"parameters": {
+						"key": 90
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Score",
+					"sid": 481567645682367,
+					"parameters": {
+						"instance-variable": "ScoreUp",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 631723465452207,
+					"parameters": {
+						"text": "Score.ScoreUp"
+					}
+				}
+			],
+			"sid": 161696541801805
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 542419753527278,
+					"parameters": {
+						"key": 88
+					}
+				}
+			],
+			"actions": [],
+			"sid": 294368318498962
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 913091515414931,
+					"parameters": {
+						"key": 67
+					}
+				}
+			],
+			"actions": [],
+			"sid": 419130407534435
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 277641472549708,
+					"parameters": {
+						"key": 86
+					}
+				}
+			],
+			"actions": [],
+			"sid": 212647839723868
+		}
+	],
+	"sid": 728034887644733
+}

@@ -1,0 +1,58 @@
+{
+	"name": "GameOver Code",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 412598225841934,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Continue"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 967858554975517,
+					"parameters": {
+						"layout": "Main Level"
+					}
+				}
+			],
+			"sid": 185974422538533
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 139399324256021,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ToMainMenu"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 579951400678457,
+					"parameters": {
+						"layout": "Main Menu"
+					}
+				}
+			],
+			"sid": 251916340182849
+		}
+	],
+	"sid": 233503835794588
+}

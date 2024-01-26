@@ -1,0 +1,49 @@
+{
+	"name": "Menu Code",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 547354274493510,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Play"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 294033077573363,
+					"parameters": {
+						"layout": "Main Level"
+					}
+				}
+			],
+			"sid": 699134717946565
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 715991351876722,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "Leave"
+					}
+				}
+			],
+			"actions": [],
+			"sid": 610791838115928
+		}
+	],
+	"sid": 738920971471688
+}
