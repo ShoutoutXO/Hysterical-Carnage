@@ -7,6 +7,64 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Background",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 33,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 358,
+						"y": 475,
+						"width": 1039.967801060946,
+						"height": 1039.967801060946,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Building",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Before",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 32,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 391,
+						"y": 381,
+						"width": 842.3965811896437,
+						"height": 842.3965811896437,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "GameOver",
 					"properties": {
 						"text": "Game Over",
@@ -220,8 +278,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 403.42489165117945,
-						"y": 388.7690180819409,
+						"x": 90,
+						"y": 97,
 						"width": 85,
 						"height": 179,
 						"originX": 0.5647058823529412,
@@ -249,8 +307,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 400.52883684102983,
-						"y": 390.77392452843617,
+						"x": 307,
+						"y": 212,
 						"width": 250,
 						"height": 250,
 						"originX": 0.5,

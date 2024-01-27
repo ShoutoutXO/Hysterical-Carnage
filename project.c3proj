@@ -114,7 +114,9 @@
 	],
 	"uniqueId": "k2p1ex54kgu",
 	"objectTypes": {
-		"items": [],
+		"items": [
+			"Background"
+		],
 		"subfolders": [
 			{
 				"items": [
@@ -163,7 +165,8 @@
 				"items": [
 					"BlockOut",
 					"Sprite3",
-					"stage"
+					"stage",
+					"Building"
 				],
 				"subfolders": [],
 				"name": "Objects"

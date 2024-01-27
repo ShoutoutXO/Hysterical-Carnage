@@ -164,11 +164,12 @@
 			],
 			"actions": [
 				{
-					"id": "set-visible",
-					"objectClass": "die",
-					"sid": 401896050919762,
+					"id": "set-animation",
+					"objectClass": "Building",
+					"sid": 488654988401329,
 					"parameters": {
-						"visibility": "visible"
+						"animation": "\"After\"",
+						"from": "beginning"
 					}
 				},
 				{
@@ -192,17 +193,15 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-any-animation-finished",
-					"objectClass": "die",
-					"sid": 506900415608990
+					"id": "on-animation-finished",
+					"objectClass": "Building",
+					"sid": 233309748173374,
+					"parameters": {
+						"animation": "\"After\""
+					}
 				}
 			],
 			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "die",
-					"sid": 687851109211644
-				},
 				{
 					"id": "set-visible",
 					"objectClass": "GameOver",
