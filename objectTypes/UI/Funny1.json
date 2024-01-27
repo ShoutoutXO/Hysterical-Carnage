@@ -1,0 +1,15 @@
+{
+	"name": "Funny1",
+	"plugin-id": "Text",
+	"sid": 292066742761123,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Flash",
+			"name": "Flash",
+			"sid": 589946738076375
+		}
+	],
+	"effectTypes": []
+}

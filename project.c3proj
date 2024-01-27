@@ -49,13 +49,6 @@
 			"bundled": false
 		},
 		{
-			"type": "plugin",
-			"id": "progressbar",
-			"name": "Progress bar",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
 			"type": "behavior",
 			"id": "Anchor",
 			"name": "Anchor",
@@ -92,6 +85,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Pin",
+			"name": "Pin",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Sin",
 			"name": "Sine",
 			"author": "Scirra",
@@ -115,7 +115,7 @@
 	"uniqueId": "k2p1ex54kgu",
 	"objectTypes": {
 		"items": [
-			"Background"
+			"Sprite"
 		],
 		"subfolders": [
 			{
@@ -146,17 +146,30 @@
 					"Main",
 					"Quit",
 					"Score",
-					"Text",
+					"1Up",
 					"Text3",
 					"Title",
 					"Threat",
-					"ProgressBar",
 					"Over",
 					"Continue",
 					"Leave",
 					"Play",
 					"ToMainMenu",
-					"container"
+					"container",
+					"Encasing",
+					"Meter",
+					"1Up2",
+					"Score2",
+					"Lives",
+					"Funny1",
+					"Joke1",
+					"Joke1s",
+					"LaughMeter",
+					"Joke2",
+					"Funny2",
+					"Funny3",
+					"Jokes2",
+					"Jokes3"
 				],
 				"subfolders": [],
 				"name": "UI"
@@ -166,7 +179,8 @@
 					"BlockOut",
 					"Sprite3",
 					"stage",
-					"Building"
+					"Building",
+					"Background"
 				],
 				"subfolders": [],
 				"name": "Objects"
@@ -174,14 +188,7 @@
 		]
 	},
 	"autosaveData": null,
-	"containers": [
-		{
-			"members": [
-				"container",
-				"ProgressBar"
-			]
-		}
-	],
+	"containers": [],
 	"families": {
 		"items": [],
 		"subfolders": []
@@ -381,7 +388,7 @@
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},
-	"viewportWidth": 800,
+	"viewportWidth": 1000,
 	"viewportHeight": 800,
 	"firstLayout": null
 }

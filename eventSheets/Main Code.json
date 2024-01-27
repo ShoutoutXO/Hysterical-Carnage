@@ -2,6 +2,56 @@
 	"name": "Main Code",
 	"events": [
 		{
+			"eventType": "variable",
+			"name": "SubtractionMultiplier",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 652072386108406
+		},
+		{
+			"eventType": "variable",
+			"name": "CurrentMeter",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 658067628758573
+		},
+		{
+			"eventType": "variable",
+			"name": "MaxMeter",
+			"type": "number",
+			"initialValue": "100",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 624987048095605
+		},
+		{
+			"eventType": "variable",
+			"name": "KeyIsDown",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 997681710150543
+		},
+		{
+			"eventType": "variable",
+			"name": "Lives",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 330475179911327
+		},
+		{
 			"eventType": "comment",
 			"text": "[h2]Starters[/h2]"
 		},
@@ -16,15 +66,8 @@
 			],
 			"actions": [
 				{
-					"id": "flash",
-					"objectClass": "BossTalk",
-					"sid": 662030251261846,
-					"behaviorType": "Flash",
-					"parameters": {
-						"on-time": "0.1",
-						"off-time": "0.1",
-						"duration": "1000"
-					}
+					"type": "comment",
+					"text": "[h3]Opening Code[/h3]"
 				},
 				{
 					"id": "play",
@@ -36,6 +79,129 @@
 						"volume": "0",
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Joke1s",
+					"sid": 130194881303052,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Player",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "scale",
+						"height-type": "scale",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Jokes2",
+					"sid": 372150610053843,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Player",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "scale",
+						"height-type": "scale",
+						"z": false
+					}
+				},
+				{
+					"id": "pin-to-object-properties",
+					"objectClass": "Jokes3",
+					"sid": 348799979155925,
+					"behaviorType": "Pin",
+					"parameters": {
+						"pin-to": "Player",
+						"x": true,
+						"y": true,
+						"angle": true,
+						"width-type": "scale",
+						"height-type": "scale",
+						"z": false
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Joke1s",
+					"sid": 930761074209490,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Joke1s",
+					"sid": 543379994427821
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jokes2",
+					"sid": 549709970984860,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Jokes2",
+					"sid": 218371677808552
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jokes3",
+					"sid": 428662119478769,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "stop-animation",
+					"objectClass": "Jokes3",
+					"sid": 977966479857464
+				},
+				{
+					"type": "comment",
+					"text": "[h3]Hide Text[/h3]"
+				},
+				{
+					"id": "flash",
+					"objectClass": "BossTalk",
+					"sid": 243587331209561,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1000"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Funny1",
+					"sid": 671204416889870,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Funny2",
+					"sid": 438173233350428,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Funny3",
+					"sid": 383286118752222,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],
@@ -59,6 +225,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "[h3]Add Score Part 1[/h3]"
+				},
+				{
 					"id": "add-to-instvar",
 					"objectClass": "Score",
 					"sid": 481567645682367,
@@ -68,11 +238,98 @@
 					}
 				},
 				{
+					"id": "add-to-instvar",
+					"objectClass": "Score2",
+					"sid": 750807239753475,
+					"parameters": {
+						"instance-variable": "ScoreUp2",
+						"value": "1"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "Score",
 					"sid": 631723465452207,
 					"parameters": {
 						"text": "Score.ScoreUp"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score2",
+					"sid": 999165025036854,
+					"parameters": {
+						"text": "Score.ScoreUp"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 367303223514815,
+					"parameters": {
+						"variable": "CurrentMeter",
+						"value": "1"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "[h3]Set Texts And Placements Part 1[/h3]"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Funny2",
+					"sid": 743044889920392,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Funny3",
+					"sid": 497828727321896,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Funny1",
+					"sid": 631707970708046,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Funny1",
+					"sid": 872502819865163,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "400"
+					}
+				},
+				{
+					"id": "destroy",
+					"objectClass": "BossTalk",
+					"sid": 240688023395725
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Joke1s",
+					"sid": 640988327331637,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Joke1s",
+					"sid": 961037386908682,
+					"parameters": {
+						"animation": "\"ahha\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -92,6 +349,10 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "[h3]Add Score Part 2[/h3]"
+				},
+				{
 					"id": "add-to-instvar",
 					"objectClass": "Score",
 					"sid": 711812214030447,
@@ -101,11 +362,90 @@
 					}
 				},
 				{
+					"id": "add-to-instvar",
+					"objectClass": "Score2",
+					"sid": 677804399380246,
+					"parameters": {
+						"instance-variable": "ScoreUp2",
+						"value": "7"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "Score",
 					"sid": 549957055265883,
 					"parameters": {
 						"text": "Score.ScoreUp"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score2",
+					"sid": 548283202430964,
+					"parameters": {
+						"text": "Score.ScoreUp"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 495234799384138,
+					"parameters": {
+						"variable": "CurrentMeter",
+						"value": "2"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "[h3]Set Texts And Placements Part 2[/h3]"
+				},
+				{
+					"id": "destroy",
+					"objectClass": "BossTalk",
+					"sid": 423695843762581
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Funny1",
+					"sid": 963978355251150,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Funny3",
+					"sid": 897838759213148,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Funny2",
+					"sid": 337438995392188,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "500"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jokes2",
+					"sid": 553920819907317,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Jokes2",
+					"sid": 642350514224045,
+					"parameters": {
+						"animation": "\"mp\"",
+						"from": "beginning"
 					}
 				}
 			],
@@ -125,11 +465,24 @@
 			],
 			"actions": [
 				{
+					"type": "comment",
+					"text": "[h3]Add Score Part 3[/h3]"
+				},
+				{
 					"id": "add-to-instvar",
 					"objectClass": "Score",
 					"sid": 508048924216398,
 					"parameters": {
 						"instance-variable": "ScoreUp",
+						"value": "14"
+					}
+				},
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Score2",
+					"sid": 617733216302098,
+					"parameters": {
+						"instance-variable": "ScoreUp2",
 						"value": "14"
 					}
 				},
@@ -140,6 +493,84 @@
 					"parameters": {
 						"text": "Score.ScoreUp"
 					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score2",
+					"sid": 560211564904028,
+					"parameters": {
+						"text": "Score.ScoreUp"
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 877380156618378,
+					"parameters": {
+						"variable": "CurrentMeter",
+						"value": "3"
+					}
+				},
+				{
+					"type": "comment",
+					"text": "[h3]Set Texts And Placements Part 3[/h3]"
+				},
+				{
+					"id": "destroy",
+					"objectClass": "BossTalk",
+					"sid": 656034791192858
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Funny1",
+					"sid": 660520658466927,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Funny2",
+					"sid": 767205455325012,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Funny3",
+					"sid": 678022093940115,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "flash",
+					"objectClass": "Funny3",
+					"sid": 587577637614168,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "500"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jokes2",
+					"sid": 319332897117980,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Jokes2",
+					"sid": 993806224830989,
+					"parameters": {
+						"animation": "\"ok\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 419130407534435
@@ -147,6 +578,327 @@
 		{
 			"eventType": "comment",
 			"text": "[h2]Substain Meter[/h2]"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 182620123201597
+				}
+			],
+			"actions": [
+				{
+					"id": "set-width",
+					"objectClass": "Meter",
+					"sid": 159864531792073,
+					"parameters": {
+						"width": "clamp(int((CurrentMeter/MaxMeter)*265),0,265)"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 948249411992216,
+					"parameters": {
+						"variable": "CurrentMeter",
+						"value": "0.1 "
+					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 904418078794805,
+					"parameters": {
+						"variable": "CurrentMeter",
+						"value": "0.1 * SubtractionMultiplier"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 828277513203984,
+					"parameters": {
+						"variable": "SubtractionMultiplier",
+						"value": "0.02"
+					}
+				}
+			],
+			"sid": 620750292523288
+		},
+		{
+			"functionName": "CurrentMeter",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [],
+			"sid": 104964463910209,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 341074484704306,
+							"parameters": {
+								"first-value": "CurrentMeter",
+								"comparison": 3,
+								"second-value": "0"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 231723607558583,
+							"parameters": {
+								"variable": "CurrentMeter",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 893019799724602
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 830406506813381,
+							"parameters": {
+								"first-value": "CurrentMeter",
+								"comparison": 5,
+								"second-value": "100"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 353770289554404,
+							"parameters": {
+								"variable": "CurrentMeter",
+								"value": "100"
+							}
+						}
+					],
+					"sid": 651713486170305
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 428877859930057,
+					"parameters": {
+						"first-value": "CurrentMeter",
+						"comparison": 3,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"callFunction": "Life",
+					"sid": 591492476891857
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 746808890536592,
+					"parameters": {
+						"variable": "CurrentMeter",
+						"value": "100"
+					}
+				}
+			],
+			"sid": 105636807410707
+		},
+		{
+			"eventType": "comment",
+			"text": "[h2]Life[/h2]"
+		},
+		{
+			"functionName": "Life",
+			"functionDescription": "",
+			"functionCategory": "",
+			"functionReturnType": "none",
+			"functionCopyPicked": false,
+			"functionIsAsync": false,
+			"functionParameters": [],
+			"eventType": "function-block",
+			"conditions": [],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 411003708516433,
+					"parameters": {
+						"variable": "Lives",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 446268903822413
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 127761293012992
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation-frame",
+					"objectClass": "Lives",
+					"sid": 307170844535109,
+					"parameters": {
+						"frame-number": "Lives"
+					}
+				}
+			],
+			"sid": 227527154338474
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 697714685266961,
+					"parameters": {
+						"first-value": "Lives",
+						"comparison": 0,
+						"second-value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 207298491788173,
+					"parameters": {
+						"layout": "Game Over"
+					}
+				},
+				{
+					"id": "stop",
+					"objectClass": "Audio",
+					"sid": 320529492804575,
+					"parameters": {
+						"tag": "\"\""
+					}
+				}
+			],
+			"sid": 450755658523336
+		},
+		{
+			"eventType": "comment",
+			"text": "[h2]Miscellaneous[/h2]"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Joke1s",
+					"sid": 440730699746894,
+					"parameters": {
+						"animation": "\"ahha\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Joke1s",
+					"sid": 900702420999906
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Joke1s",
+					"sid": 613767205694008,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 119683497559797
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Jokes2",
+					"sid": 194691400229527,
+					"parameters": {
+						"animation": "\"mp\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Jokes2",
+					"sid": 274258894986606
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jokes2",
+					"sid": 200389697300385,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 275556288891381
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Jokes3",
+					"sid": 457353883493036,
+					"parameters": {
+						"animation": "\"ok\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "stop-animation",
+					"objectClass": "Jokes3",
+					"sid": 230241936054849
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Jokes3",
+					"sid": 368744541339180,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 562825601710381
 		}
 	],
 	"sid": 728034887644733

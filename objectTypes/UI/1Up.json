@@ -1,0 +1,15 @@
+{
+	"name": "1Up",
+	"plugin-id": "Text",
+	"sid": 879823065136738,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 317465600978462
+		}
+	],
+	"effectTypes": []
+}

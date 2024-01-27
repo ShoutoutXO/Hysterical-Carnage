@@ -1,0 +1,15 @@
+{
+	"name": "LaughMeter",
+	"plugin-id": "Text",
+	"sid": 460693606064246,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 686289840781252
+		}
+	],
+	"effectTypes": []
+}
