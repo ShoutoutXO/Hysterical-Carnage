@@ -1,0 +1,23 @@
+{
+	"name": "Score",
+	"plugin-id": "Text",
+	"sid": 911142176465946,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "ScoreUp",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 903842717842571
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 694675136178984
+		}
+	],
+	"effectTypes": []
+}

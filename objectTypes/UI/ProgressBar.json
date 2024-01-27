@@ -1,0 +1,22 @@
+{
+	"name": "ProgressBar",
+	"plugin-id": "progressbar",
+	"sid": 753609074314147,
+	"isGlobal": false,
+	"instanceVariables": [
+		{
+			"name": "Meter",
+			"type": "number",
+			"desc": "",
+			"show": true,
+			"sid": 326605318930751
+		}
+	],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Anchor",
+			"sid": 911449976884894
+		}
+	]
+}

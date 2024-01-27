@@ -1,0 +1,153 @@
+{
+	"name": "Main Code",
+	"events": [
+		{
+			"eventType": "comment",
+			"text": "[h2]Starters[/h2]"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 986803165753039
+				}
+			],
+			"actions": [
+				{
+					"id": "flash",
+					"objectClass": "BossTalk",
+					"sid": 662030251261846,
+					"behaviorType": "Flash",
+					"parameters": {
+						"on-time": "0.1",
+						"off-time": "0.1",
+						"duration": "1000"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 390616152011712,
+					"parameters": {
+						"audio-file": "Soundtrack #7 Pat und Patachon ｜ Eric Frantzen Chor & Orchester",
+						"loop": "looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 752669238129633
+		},
+		{
+			"eventType": "comment",
+			"text": "[h2]Move Scores[/h2]"
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 467852618593651,
+					"parameters": {
+						"key": 90
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Score",
+					"sid": 481567645682367,
+					"parameters": {
+						"instance-variable": "ScoreUp",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 631723465452207,
+					"parameters": {
+						"text": "Score.ScoreUp"
+					}
+				}
+			],
+			"sid": 161696541801805
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 542419753527278,
+					"parameters": {
+						"key": 88
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Score",
+					"sid": 711812214030447,
+					"parameters": {
+						"instance-variable": "ScoreUp",
+						"value": "7"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 549957055265883,
+					"parameters": {
+						"text": "Score.ScoreUp"
+					}
+				}
+			],
+			"sid": 294368318498962
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 913091515414931,
+					"parameters": {
+						"key": 67
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-instvar",
+					"objectClass": "Score",
+					"sid": 508048924216398,
+					"parameters": {
+						"instance-variable": "ScoreUp",
+						"value": "14"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Score",
+					"sid": 762727197059021,
+					"parameters": {
+						"text": "Score.ScoreUp"
+					}
+				}
+			],
+			"sid": 419130407534435
+		},
+		{
+			"eventType": "comment",
+			"text": "[h2]Substain Meter[/h2]"
+		}
+	],
+	"sid": 728034887644733
+}

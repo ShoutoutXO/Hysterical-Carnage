@@ -1,0 +1,27 @@
+{
+	"name": "stage",
+	"plugin-id": "TiledBg",
+	"sid": 605374161276235,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Solid",
+			"sid": 200620794512660
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 7258723,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}
