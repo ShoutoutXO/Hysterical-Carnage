@@ -52,6 +52,11 @@
 					"parameters": {
 						"layout": "Main Level"
 					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 870554702313697
 				}
 			],
 			"sid": 185974422538533
@@ -78,6 +83,11 @@
 					"parameters": {
 						"layout": "Main Menu"
 					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 522351423779396
 				}
 			],
 			"sid": 251916340182849
