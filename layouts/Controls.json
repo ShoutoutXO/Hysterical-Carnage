@@ -1,5 +1,5 @@
 {
-	"name": "Main Menu",
+	"name": "Controls",
 	"layers": [
 		{
 			"name": "Layer 0",
@@ -7,12 +7,12 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Title",
+					"type": "Controlling",
 					"properties": {
-						"text": "Hysterical Carnage",
+						"text": "How to Play:",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 24,
+						"size": 22,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -30,14 +30,14 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 19,
+					"uid": 52,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 370,
-						"y": 268,
-						"width": 383,
-						"height": 84,
+						"x": 374,
+						"y": 193,
+						"width": 213,
+						"height": 63,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -51,41 +51,12 @@
 					}
 				},
 				{
-					"type": "Play",
+					"type": "Text2",
 					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 20,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 510,
-						"y": 406,
-						"width": 141,
-						"height": 48,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "HoTolay",
-					"properties": {
-						"text": "Play",
+						"text": "Move: Arrow Keys",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 17,
+						"size": 20,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -103,14 +74,14 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 21,
+					"uid": 53,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 487,
-						"y": 393,
-						"width": 200,
-						"height": 30,
+						"x": 375,
+						"y": 276,
+						"width": 326,
+						"height": 63,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -124,41 +95,12 @@
 					}
 				},
 				{
-					"type": "Playing",
+					"type": "Text4",
 					"properties": {
-						"initially-visible": true,
-						"initial-animation": "Animation 1",
-						"initial-frame": 0,
-						"enable-collisions": true,
-						"live-preview": false
-					},
-					"uid": 22,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 511,
-						"y": 525,
-						"width": 137,
-						"height": 43,
-						"originX": 0.5,
-						"originY": 0.5,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "HoTolay",
-					"properties": {
-						"text": "How To Play",
+						"text": "Joke Action: Z, X, C",
 						"enable-bbcode": true,
 						"font": "Arial",
-						"size": 17,
+						"size": 20,
 						"line-height": 0,
 						"bold": false,
 						"italic": false,
@@ -176,14 +118,131 @@
 						"origin": "top-left",
 						"read-aloud": false
 					},
-					"uid": 23,
+					"uid": 54,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 447,
-						"y": 510,
-						"width": 200,
-						"height": 30,
+						"x": 374,
+						"y": 359,
+						"width": 326,
+						"height": 63,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text5",
+					"properties": {
+						"text": "Shoot: S",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 55,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 372,
+						"y": 441,
+						"width": 326,
+						"height": 63,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "ToMainMenu2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 56,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 484,
+						"y": 552,
+						"width": 142.2496799773155,
+						"height": 53.21401140912758,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Text6",
+					"properties": {
+						"text": "Main Menu",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 19,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 57,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 420,
+						"y": 534,
+						"width": 212,
+						"height": 37,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -197,7 +256,7 @@
 					}
 				}
 			],
-			"sid": 801494265832839,
+			"sid": 883796573199297,
 			"effectTypes": [],
 			"isInitiallyVisible": true,
 			"isInitiallyInteractive": true,
@@ -226,7 +285,7 @@
 			"global": false
 		}
 	],
-	"sid": 443397223782885,
+	"sid": 174261934110531,
 	"nonworld-instances": [],
 	"effectTypes": [],
 	"width": 1280,

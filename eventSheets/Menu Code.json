@@ -49,12 +49,47 @@
 					"parameters": {
 						"mouse-button": "left",
 						"click-type": "clicked",
-						"object-clicked": "Leave"
+						"object-clicked": "Playing"
 					}
 				}
 			],
-			"actions": [],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 349780338102040,
+					"parameters": {
+						"layout": "Controls"
+					}
+				}
+			],
 			"sid": 610791838115928
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-object-clicked",
+					"objectClass": "Mouse",
+					"sid": 290444491496044,
+					"parameters": {
+						"mouse-button": "left",
+						"click-type": "clicked",
+						"object-clicked": "ToMainMenu2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 526598962559630,
+					"parameters": {
+						"layout": "Main Menu"
+					}
+				}
+			],
+			"sid": 702714715485649
 		},
 		{
 			"eventType": "block",
