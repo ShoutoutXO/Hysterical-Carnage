@@ -57,6 +57,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Bullet",
+			"name": "Bullet",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "EightDir",
 			"name": "8 Direction",
 			"author": "Scirra",
@@ -114,9 +121,7 @@
 	],
 	"uniqueId": "k2p1ex54kgu",
 	"objectTypes": {
-		"items": [
-			"Sprite"
-		],
+		"items": [],
 		"subfolders": [
 			{
 				"items": [
@@ -133,7 +138,8 @@
 					"BossIntro",
 					"Bossman",
 					"die",
-					"Player"
+					"Player",
+					"Enemy"
 				],
 				"subfolders": [],
 				"name": "Characters"
@@ -180,7 +186,13 @@
 					"Sprite3",
 					"stage",
 					"Building",
-					"Background"
+					"Background",
+					"bullet",
+					"Spawner",
+					"Sprite",
+					"Spawner2",
+					"Spawner3",
+					"Spawner4"
 				],
 				"subfolders": [],
 				"name": "Objects"

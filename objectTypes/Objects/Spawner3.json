@@ -1,34 +1,10 @@
 {
-	"name": "Player",
+	"name": "Spawner3",
 	"plugin-id": "Sprite",
-	"sid": 356661341635103,
+	"sid": 251131348679365,
 	"isGlobal": false,
-	"instanceVariables": [
-		{
-			"name": "Knocked",
-			"type": "number",
-			"desc": "",
-			"show": true,
-			"sid": 777989900965165
-		}
-	],
-	"behaviorTypes": [
-		{
-			"behaviorId": "MoveTo",
-			"name": "MoveTo",
-			"sid": 405908034656426
-		},
-		{
-			"behaviorId": "EightDir",
-			"name": "8Direction",
-			"sid": 962056002167333
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "ScrollTo",
-			"sid": 992899162569807
-		}
-	],
+	"instanceVariables": [],
+	"behaviorTypes": [],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -42,13 +18,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 1455537,
+						"imageSpriteId": 4759077,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 818654496594256,
+				"sid": 533763077442817,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

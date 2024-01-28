@@ -52,6 +52,16 @@
 			"sid": 330475179911327
 		},
 		{
+			"eventType": "variable",
+			"name": "Spawner",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 251700160983800
+		},
+		{
 			"eventType": "comment",
 			"text": "[h2]Starters[/h2]"
 		},
@@ -164,6 +174,25 @@
 					"id": "stop-animation",
 					"objectClass": "Jokes3",
 					"sid": 977966479857464
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Spawner",
+					"sid": 613882899955974,
+					"parameters": {
+						"object": "Enemy",
+						"layer": "0",
+						"image-point": "2",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "set-scale",
+					"objectClass": "Enemy",
+					"sid": 780637965230124,
+					"parameters": {
+						"scale": "1"
+					}
 				},
 				{
 					"type": "comment",
@@ -576,6 +605,41 @@
 			"sid": 419130407534435
 		},
 		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "key-is-down",
+					"objectClass": "Keyboard",
+					"sid": 911147206729486,
+					"parameters": {
+						"key": 83
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 965869371725663,
+					"parameters": {
+						"seconds": "3"
+					}
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Player",
+					"sid": 317867369486240,
+					"parameters": {
+						"object": "bullet",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 105444934351492
+		},
+		{
 			"eventType": "comment",
 			"text": "[h2]Substain Meter[/h2]"
 		},
@@ -805,6 +869,11 @@
 					"parameters": {
 						"tag": "\"\""
 					}
+				},
+				{
+					"id": "reset-global-variables",
+					"objectClass": "System",
+					"sid": 572123329904425
 				}
 			],
 			"sid": 450755658523336
@@ -899,6 +968,118 @@
 				}
 			],
 			"sid": 562825601710381
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 742631488551743
+				}
+			],
+			"actions": [
+				{
+					"id": "set-angle-toward-position",
+					"objectClass": "Enemy",
+					"sid": 620824639285234,
+					"parameters": {
+						"x": "Player.X",
+						"y": "Player.Y"
+					}
+				},
+				{
+					"id": "move-forward",
+					"objectClass": "Enemy",
+					"sid": 454564331073054,
+					"parameters": {
+						"distance": "2.1*dt*60"
+					}
+				}
+			],
+			"sid": 746892555523457
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Enemy",
+					"sid": 623580327830207,
+					"parameters": {
+						"object": "Player"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 621015456946514,
+					"parameters": {
+						"variable": "SubtractionMultiplier",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 550668717468277
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "bullet",
+					"sid": 623818939457378,
+					"parameters": {
+						"object": "Enemy"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Enemy",
+					"sid": 610857890251124,
+					"parameters": {
+						"animation": "\"Blood\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 109395354286929
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-animation-finished",
+					"objectClass": "Enemy",
+					"sid": 669387313359042,
+					"parameters": {
+						"animation": "\"Blood\""
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "destroy",
+					"objectClass": "Enemy",
+					"sid": 499612299222505
+				},
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Spawner",
+					"sid": 297058389631248,
+					"parameters": {
+						"object": "Enemy",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				}
+			],
+			"sid": 500469058762660
 		}
 	],
 	"sid": 728034887644733
