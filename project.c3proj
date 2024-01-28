@@ -122,7 +122,8 @@
 	"uniqueId": "k2p1ex54kgu",
 	"objectTypes": {
 		"items": [
-			"Text6"
+			"Text6",
+			"Sprite2"
 		],
 		"subfolders": [
 			{
