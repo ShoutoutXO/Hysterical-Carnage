@@ -131,6 +131,46 @@
 					"parameters": {
 						"layout": "Main Level"
 					}
+				},
+				{
+					"id": "set-wait-time",
+					"objectClass": "Fault",
+					"sid": 430083947300006,
+					"behaviorType": "Fade",
+					"parameters": {
+						"wait-time": "2"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "Fault",
+					"sid": 115830181760467,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "BossIntro",
+					"sid": 669285954680071,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Threat",
+					"sid": 243551501024412,
+					"parameters": {
+						"visibility": "visible"
+					}
+				},
+				{
+					"id": "set-animation",
+					"objectClass": "Threat",
+					"sid": 774468207377752,
+					"parameters": {
+						"animation": "\"Make Me\"",
+						"from": "beginning"
+					}
 				}
 			],
 			"sid": 274015133409018

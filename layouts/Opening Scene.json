@@ -7,60 +7,31 @@
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "Fault",
+					"type": "Newsletter",
 					"properties": {
-						"text": "This is your fault for this",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 19,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0,
-							0,
-							0,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"icon-set": -1,
 						"initially-visible": true,
-						"origin": "top-left",
-						"read-aloud": false
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
 					},
-					"uid": 15,
+					"uid": 51,
 					"instanceVariables": {},
-					"behaviors": {
-						"Flash": {
-							"properties": {}
-						},
-						"Fade": {
-							"properties": {
-								"fade-in-time": 0,
-								"wait-time": 5,
-								"fade-out-time": 1,
-								"destroy": true,
-								"enabled": true,
-								"live-preview": false
-							}
-						}
-					},
+					"behaviors": {},
 					"world": {
-						"x": 363.5957038344682,
-						"y": 263.59121635577645,
-						"width": 343.0602728328294,
-						"height": 69.01643804531722,
-						"originX": 0,
-						"originY": 0,
+						"x": 510,
+						"y": 414,
+						"width": 466.9014885390707,
+						"height": 466.9014885390707,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 5.8468529941810035,
 						"zElevation": 0
 					}
 				},
@@ -141,6 +112,64 @@
 						"height": 74,
 						"originX": 0.4608294930875576,
 						"originY": 0.6621621621621622,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Fault",
+					"properties": {
+						"text": "This is your fault for this",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 23,
+						"line-height": 0,
+						"bold": true,
+						"italic": false,
+						"color": [
+							0,
+							0,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"icon-set": -1,
+						"initially-visible": true,
+						"origin": "top-left",
+						"read-aloud": false
+					},
+					"uid": 15,
+					"instanceVariables": {},
+					"behaviors": {
+						"Flash": {
+							"properties": {}
+						},
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 5,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 373,
+						"y": 357,
+						"width": 343.0602728328294,
+						"height": 179.01643804531722,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,

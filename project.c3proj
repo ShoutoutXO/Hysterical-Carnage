@@ -139,7 +139,8 @@
 					"Bossman",
 					"die",
 					"Player",
-					"Enemy"
+					"Enemy",
+					"Newsletter"
 				],
 				"subfolders": [],
 				"name": "Characters"
