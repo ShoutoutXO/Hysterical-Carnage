@@ -782,6 +782,18 @@
 						"image-point": "0",
 						"create-hierarchy": false
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 350185088000395,
+					"parameters": {
+						"audio-file": "cartoon_anime_laser_shoot_hard_fast_003_71525",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 105444934351492
@@ -1200,6 +1212,18 @@
 					"parameters": {
 						"animation": "\"Blood\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 355819220360438,
+					"parameters": {
+						"audio-file": "Blood-Splatter-Sound-Effect",
+						"loop": "not-looping",
+						"volume": "-15",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
