@@ -46,6 +46,18 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 586282817605487,
+					"parameters": {
+						"audio-file": "NBC's Meet the Press theme - aka ",
+						"loop": "not-looping",
+						"volume": "-10",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 988973166998005
@@ -171,6 +183,11 @@
 						"animation": "\"Make Me\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "stop-all",
+					"objectClass": "Audio",
+					"sid": 371760779814959
 				}
 			],
 			"sid": 274015133409018

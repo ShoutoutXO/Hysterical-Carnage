@@ -104,11 +104,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 335410285151027,
+					"sid": 636324076950244,
 					"parameters": {
 						"audio-file": "Curb Your Enthusiasm Theme",
 						"loop": "looping",
-						"volume": "0",
+						"volume": "-13",
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
 					}

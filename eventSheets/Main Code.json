@@ -82,11 +82,11 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 390616152011712,
+					"sid": 903646248776152,
 					"parameters": {
-						"audio-file": "Soundtrack #7 Pat und Patachon ｜ Eric Frantzen Chor & Orchester",
+						"audio-file": "Main Song",
 						"loop": "looping",
-						"volume": "0",
+						"volume": "-13",
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
 					}
@@ -360,6 +360,18 @@
 						"animation": "\"ahha\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 630907228337166,
+					"parameters": {
+						"audio-file": "Laugh",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 161696541801805
@@ -475,6 +487,18 @@
 					"parameters": {
 						"animation": "\"mp\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 930772620812712,
+					"parameters": {
+						"audio-file": "Laugh",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
 					}
 				}
 			],
@@ -600,6 +624,18 @@
 						"animation": "\"ok\"",
 						"from": "beginning"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 602818141625205,
+					"parameters": {
+						"audio-file": "Laugh",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 419130407534435
@@ -620,9 +656,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 965869371725663,
+					"sid": 306612720060167,
 					"parameters": {
-						"seconds": "3"
+						"seconds": "1"
 					}
 				},
 				{
@@ -682,10 +718,10 @@
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
-					"sid": 828277513203984,
+					"sid": 912665250596911,
 					"parameters": {
 						"variable": "SubtractionMultiplier",
-						"value": "0.02"
+						"value": "0.01"
 					}
 				}
 			],
@@ -787,6 +823,18 @@
 						"variable": "CurrentMeter",
 						"value": "100"
 					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 154683134048595,
+					"parameters": {
+						"audio-file": "Damage",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 105636807410707
@@ -863,12 +911,9 @@
 					}
 				},
 				{
-					"id": "stop",
+					"id": "stop-all",
 					"objectClass": "Audio",
-					"sid": 320529492804575,
-					"parameters": {
-						"tag": "\"\""
-					}
+					"sid": 385915697011629
 				},
 				{
 					"id": "reset-global-variables",
@@ -991,9 +1036,9 @@
 				{
 					"id": "move-forward",
 					"objectClass": "Enemy",
-					"sid": 454564331073054,
+					"sid": 639459991151394,
 					"parameters": {
-						"distance": "2.1*dt*60"
+						"distance": "0.5*dt*60"
 					}
 				}
 			],
@@ -1066,6 +1111,14 @@
 					"id": "destroy",
 					"objectClass": "Enemy",
 					"sid": 499612299222505
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 143891512283476,
+					"parameters": {
+						"seconds": "5"
+					}
 				},
 				{
 					"id": "spawn-another-object",

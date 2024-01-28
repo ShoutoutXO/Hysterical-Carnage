@@ -123,7 +123,8 @@
 	"objectTypes": {
 		"items": [
 			"Text6",
-			"Sprite2"
+			"Sprite2",
+			"Sprite4"
 		],
 		"subfolders": [
 			{
@@ -204,7 +205,8 @@
 					"Spawner3",
 					"Spawner4",
 					"Background2",
-					"PlayerBackground"
+					"PlayerBackground",
+					"Ground"
 				],
 				"subfolders": [],
 				"name": "Objects"
@@ -256,7 +258,7 @@
 					}
 				},
 				{
-					"name": "Soundtrack #7 Pat und Patachon ｜ Eric Frantzen Chor & Orchester.webm",
+					"name": "Main Song.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 350663653217842,
 					"file-info": {
@@ -267,6 +269,38 @@
 					"name": "＂Cold＂ - Jorge Méndez (Sad Piano & Violin Instrumental).webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 999571999838741,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Laugh.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 871590797418054,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "Damage.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 137883397815823,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "newsreportmusic-6242.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 871856514850398,
+					"file-info": {
+						"purpose": "none"
+					}
+				},
+				{
+					"name": "NBC's Meet the Press theme - aka .webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 234715795320647,
 					"file-info": {
 						"purpose": "none"
 					}
