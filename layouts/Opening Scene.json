@@ -7,6 +7,35 @@
 			"subLayers": [],
 			"instances": [
 				{
+					"type": "Background2",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 58,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 581.5387315492209,
+						"y": 505.53873154922087,
+						"width": 1775.0774630984417,
+						"height": 1775.0774630984417,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Newsletter",
 					"properties": {
 						"initially-visible": true,
@@ -19,10 +48,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 510,
-						"y": 414,
-						"width": 466.9014885390707,
-						"height": 466.9014885390707,
+						"x": 640,
+						"y": 630,
+						"width": 1046.3763709614502,
+						"height": 1094.6810444269474,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -77,10 +106,10 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 520.4735595710088,
-						"y": 491.18756765918056,
-						"width": 237,
-						"height": 251,
+						"x": 552,
+						"y": 433,
+						"width": 688.5601270223879,
+						"height": 729.2345649055668,
 						"originX": 0.5274261603375527,
 						"originY": 0.49800796812749004,
 						"color": [
@@ -106,8 +135,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 513.158913546397,
-						"y": 281.4740907665238,
+						"x": 502,
+						"y": 124,
 						"width": 217,
 						"height": 74,
 						"originX": 0.4608294930875576,

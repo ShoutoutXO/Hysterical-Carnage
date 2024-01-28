@@ -201,7 +201,9 @@
 					"Sprite",
 					"Spawner2",
 					"Spawner3",
-					"Spawner4"
+					"Spawner4",
+					"Background2",
+					"PlayerBackground"
 				],
 				"subfolders": [],
 				"name": "Objects"
