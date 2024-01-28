@@ -67,7 +67,7 @@
 				{
 					"type": "BlameGuy",
 					"properties": {
-						"initially-visible": true,
+						"initially-visible": false,
 						"initial-animation": "Begin",
 						"initial-frame": 0,
 						"enable-collisions": true,
@@ -171,7 +171,7 @@
 						"vertical-alignment": "top",
 						"wrapping": "word",
 						"icon-set": -1,
-						"initially-visible": true,
+						"initially-visible": false,
 						"origin": "top-left",
 						"read-aloud": false
 					},
@@ -199,6 +199,46 @@
 						"height": 179.01643804531722,
 						"originX": 0,
 						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "FadeMainMenu3",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 66,
+					"instanceVariables": {},
+					"behaviors": {
+						"Fade": {
+							"properties": {
+								"fade-in-time": 0,
+								"wait-time": 0,
+								"fade-out-time": 1,
+								"destroy": true,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"world": {
+						"x": 449.04838529866583,
+						"y": 468.04838529866583,
+						"width": 1302.0967705973317,
+						"height": 1302.0967705973317,
+						"originX": 0.5,
+						"originY": 0.5,
 						"color": [
 							1,
 							1,

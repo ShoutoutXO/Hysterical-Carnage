@@ -21,11 +21,11 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 278471277132701,
+					"id": "set-visible",
+					"objectClass": "FadeMainMenu3",
+					"sid": 390870804245790,
 					"parameters": {
-						"layout": "Opening Scene"
+						"visibility": "visible"
 					}
 				},
 				{
@@ -34,6 +34,21 @@
 					"sid": 933743211473765,
 					"parameters": {
 						"tag": "\"\""
+					}
+				},
+				{
+					"id": "restart-fade",
+					"objectClass": "FadeMainMenu2",
+					"sid": 387633494310103,
+					"behaviorType": "Fade"
+				},
+				{
+					"id": "set-fade-in-time",
+					"objectClass": "FadeMainMenu2",
+					"sid": 766703322350182,
+					"behaviorType": "Fade",
+					"parameters": {
+						"fade-in-time": "1"
 					}
 				}
 			],
@@ -115,6 +130,28 @@
 				}
 			],
 			"sid": 897247941793283
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-fade-in-finished",
+					"objectClass": "FadeMainMenu2",
+					"sid": 198484459344299,
+					"behaviorType": "Fade"
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 406113313941592,
+					"parameters": {
+						"layout": "Opening Scene"
+					}
+				}
+			],
+			"sid": 614059235681740
 		}
 	],
 	"sid": 738920971471688

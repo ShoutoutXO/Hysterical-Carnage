@@ -1,10 +1,16 @@
 {
-	"name": "Ground",
+	"name": "FadeMainMenu",
 	"plugin-id": "Sprite",
-	"sid": 490176503832603,
+	"sid": 603648982982543,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Fade",
+			"name": "Fade",
+			"sid": 114592751969552
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -18,13 +24,13 @@
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
-						"imageSpriteId": 9248032,
+						"imageSpriteId": 9840279,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 720498032802075,
+				"sid": 951052303519486,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

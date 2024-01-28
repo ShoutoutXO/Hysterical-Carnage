@@ -232,6 +232,15 @@
 					"parameters": {
 						"visibility": "invisible"
 					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "Bossman",
+					"sid": 187494421627112,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "inactive"
+					}
 				}
 			],
 			"sid": 752669238129633
@@ -372,9 +381,43 @@
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "Bossman",
+					"sid": 757334900741690,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "active"
+					}
 				}
 			],
 			"sid": 161696541801805
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 903337935097965,
+					"parameters": {
+						"key": 90
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-active",
+					"objectClass": "Bossman",
+					"sid": 835760579029293,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "inactive"
+					}
+				}
+			],
+			"sid": 164896340006434
 		},
 		{
 			"eventType": "block",
@@ -500,9 +543,43 @@
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "Bossman",
+					"sid": 831269250816932,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "active"
+					}
 				}
 			],
 			"sid": 294368318498962
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 389212704652119,
+					"parameters": {
+						"key": 88
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-active",
+					"objectClass": "Bossman",
+					"sid": 345883545823793,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "inactive"
+					}
+				}
+			],
+			"sid": 880166997184031
 		},
 		{
 			"eventType": "block",
@@ -636,9 +713,43 @@
 						"stereo-pan": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "set-active",
+					"objectClass": "Bossman",
+					"sid": 649142004108303,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "active"
+					}
 				}
 			],
 			"sid": 419130407534435
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-released",
+					"objectClass": "Keyboard",
+					"sid": 224236625917228,
+					"parameters": {
+						"key": 67
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-active",
+					"objectClass": "Bossman",
+					"sid": 278449582548207,
+					"behaviorType": "Sine",
+					"parameters": {
+						"state": "inactive"
+					}
+				}
+			],
+			"sid": 555972807148010
 		},
 		{
 			"eventType": "block",

@@ -16,17 +16,6 @@
 			],
 			"actions": [
 				{
-					"id": "flash",
-					"objectClass": "Fault",
-					"sid": 358626610246753,
-					"behaviorType": "Flash",
-					"parameters": {
-						"on-time": "0.1",
-						"off-time": "0.1",
-						"duration": "1000"
-					}
-				},
-				{
 					"id": "stop-animation",
 					"objectClass": "Threat",
 					"sid": 718176032021183
@@ -118,6 +107,14 @@
 					"parameters": {
 						"animation": "\"Make Me\"",
 						"from": "beginning"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Newsletter",
+					"sid": 966568992393667,
+					"parameters": {
+						"visibility": "invisible"
 					}
 				}
 			],
