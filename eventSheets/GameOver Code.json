@@ -185,6 +185,18 @@
 					"id": "destroy",
 					"objectClass": "Over",
 					"sid": 880765235695481
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 323454051171602,
+					"parameters": {
+						"audio-file": "Metal Gear Solid - Snake death scream sound effect",
+						"loop": "not-looping",
+						"volume": "0",
+						"stereo-pan": "0",
+						"tag-optional": "\"\""
+					}
 				}
 			],
 			"sid": 723837558158339

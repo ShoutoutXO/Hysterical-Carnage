@@ -337,6 +337,14 @@
 					"file-info": {
 						"purpose": "none"
 					}
+				},
+				{
+					"name": "Metal Gear Solid - Snake death scream sound effect.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 658728400219958,
+					"file-info": {
+						"purpose": "none"
+					}
 				}
 			],
 			"subfolders": []
